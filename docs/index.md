@@ -101,7 +101,6 @@ Fleet-wide learning for vehicles and robots without centralized data collection
 ## Community & Support
 
 - **GitHub**: [github.com/furcateresearch](https://github.com/furcateresearch)
-- **Documentation**: [docs.furcate.io](https://docs.furcate.io)
 - **Email**: contact@furcate.io
 
 ## License
