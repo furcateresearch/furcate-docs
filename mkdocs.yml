@@ -1,0 +1,83 @@
+site_name: Furcate Documentation
+site_url: https://docs.furcate.io
+site_description: Distributed machine learning protocol for edge networks
+site_author: Furcate
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link
+
+  icon:
+    repo: fontawesome/brands/github
+
+repo_name: furcateresearch
+repo_url: https://github.com/furcateresearch
+
+nav:
+  - Home: index.md
+  - Protocol:
+      - Overview: protocol/overview.md
+      - Federated Learning: protocol/federated-learning.md
+      - Security Model: protocol/security-model.md
+      - Consensus: protocol/consensus.md
+  - Integration:
+      - MQTT: integration/mqtt.md
+      - Modbus: integration/modbus.md
+      - Custom Adapters: integration/custom-adapters.md
+  - Examples:
+      - Industrial Automation: examples/industrial.md
+      - Precision Agriculture: examples/agriculture.md
+      - Smart Cities: examples/smart-cities.md
+  - API Reference: api-reference.md
+  - Contributing: contributing.md
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.details
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+  - minify:
+      minify_html: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/furcateresearch
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/furcateio
+  
+  version:
+    provider: mike
+
+copyright: Copyright &copy; 2025 Furcate
